@@ -35,7 +35,7 @@ def over?(board)
 end
 
 def winner(board)
-  winner = board[won?(board)[0]]
+  winner_i = board[won?(board)[0]]
 end
 
 def turn_count(board)
