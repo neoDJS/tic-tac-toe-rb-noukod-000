@@ -23,10 +23,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|case_i| case_i != " " && case_i != nil}
+  board.all?{|case_i| case_i != " "}
 end
 
-def draw?(board) 
+def draw?(board)
   full?(board) && !WIN_COMBINATIONS.include?(won?(board))
 end
 
