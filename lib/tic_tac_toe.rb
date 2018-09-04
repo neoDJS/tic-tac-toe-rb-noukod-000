@@ -90,7 +90,7 @@ def play(board)
 
   if draw?(board)
     puts "Cat's Game!"
-  else #if WIN_COMBINATIONS.include?(won?(board))
+  elsif WIN_COMBINATIONS.include?(won?(board))
     #winner_user = winner(board)
     puts "Congratulations #{winner(board)}!"
   end
