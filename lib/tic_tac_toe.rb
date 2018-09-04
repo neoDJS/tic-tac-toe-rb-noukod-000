@@ -49,7 +49,7 @@ end
 
 
 def current_player(board)
-  player = turn_count(board).even ? "X" : "O"
+  player = turn_count(board)%2 == 0 ? "X" : "O"
 end
 
 
