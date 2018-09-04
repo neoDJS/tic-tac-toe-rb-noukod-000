@@ -55,7 +55,7 @@ describe './lib/tic_tac_toe.rb' do
       allow(self).to receive(:gets).and_return("1", "2", "3")
       allow(self).to receive(:winner).and_return("X")
 
-      expect(self).to receive(:won?).at_least(:twice).and_return(false, false, true)
+      expect(self).to receive(:over?).at_least(:twice).and_return(false, false, true)
 
       play(board)
     end
