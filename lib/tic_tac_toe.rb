@@ -31,7 +31,7 @@ def draw?(board)
 end
 
 def over?(board)
-  WIN_COMBINATIONS.include?(won?(board)) || draw?(board)
+  won?(board) || draw?(board)
 end
 
 def winner(board)
